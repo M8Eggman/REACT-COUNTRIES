@@ -1,6 +1,7 @@
 .sectionDetails {
   width: 100%;
-  padding-top: 95px;
+  min-height: 100dvh calc(100dvh - 160px); /* toute la hauteur sans la nav et et footer */
+  padding-block: 95px;
   padding-inline: 95px;
   box-sizing: border-box;
 }
