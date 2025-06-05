@@ -1,7 +1,8 @@
 
 
 .homeContainer{
-    margin: 10%;
+    padding-inline: 95px;
+    padding-block: 95px;
 }
 
 .searchAndFilter{
@@ -18,13 +19,13 @@
     border-radius: 5px;   
     box-shadow: 2px 5px 5px black;;
     padding: 10px 60px;
- 
 }
 
 
 .searchContainer input {
     border : none;
     align-items: center;
+    width: 100%;
 }
 
 .searchContainer span{
@@ -82,5 +83,14 @@
 }
 
 .dropdown-item:hover {
-  background-color: #f0f0f0;
+  background-color: #f8f7f7;
 }
+
+
+.cardsContainer{
+
+    margin-top: 100px;
+    margin-inline: -35px;
+
+}
+

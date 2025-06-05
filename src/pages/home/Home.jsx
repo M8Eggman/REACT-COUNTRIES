@@ -1,7 +1,9 @@
+import Cards from '../../components/cards/Cards';
 import './home.css'
 import { useState } from 'react';
+import globe from '../../assets/img/globe.gif'
 
-export default function Home() {
+export default function Home({donnee}) {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedRegion, setSelectedRegion] = useState("Filter by Region");
 
@@ -44,6 +46,20 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
+                <div className='cardsContainer'>
+                    {!donnee? 
+                        <div className='loadingContainer'>
+                            <p className='loadingText'>Loading...</p>
+                            <img src={globe} alt="" style={{width:200}}/>  
+                        </div>
+                        : <Cards donnee={donnee}/>  
+                          
+                }
+                                         
+                </div>
+
+                
             </section>
         </>
     )
