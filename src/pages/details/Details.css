@@ -22,9 +22,13 @@
 }
 .detailsImg {
   min-width: 40vw;
+  height: 30vw;
+  overflow: hidden;
 }
 .detailsImg img {
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .detailsText {
   min-width: 40vw;
