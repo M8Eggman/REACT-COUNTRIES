@@ -17,8 +17,8 @@ export default function App() {
 
   return (
     <>
-      <Nav/>
-      <Home donnee ={donnee} />
+      <Nav />
+      <Details data={data} />
     </>
   );
 }
