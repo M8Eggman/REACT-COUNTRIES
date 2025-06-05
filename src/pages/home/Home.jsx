@@ -29,12 +29,16 @@ export default function Home() {
                                 <span className='arrow'>▾</span>
                             </button>
                             {isOpen && (
-                                <ul className='dropdown-menu' >
-                                {regions.map((element) => (
-                                    <li key={element} className='dropdown-item' onClick={()=>{handleSelect}}>
-                                        {element}
-                                    </li>
-                                ))}
+                                <ul className='dropdown-menu'>
+                                    {regions.map(region => (
+                                        <li
+                                            key={region}
+                                            onClick={() => handleSelect(region)}
+                                            className='dropdown-item'
+                                        >
+                                            {region}
+                                        </li>
+                                    ))}
                                 </ul>
                             )}
                         </div>

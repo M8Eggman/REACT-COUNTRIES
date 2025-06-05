@@ -65,19 +65,20 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  width: 100%;
+  width: 80%;
   background: white;
   border: 1px none #ccc;
   border-radius: 8px;
   margin-top: 5px;
-  z-index: 10;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .dropdown-item {
-  padding: 10px 14px;
+  
+  padding: 10px;
   cursor: pointer;
   font-size: 14px;
+  list-style-type: none;
 }
 
 .dropdown-item:hover {
