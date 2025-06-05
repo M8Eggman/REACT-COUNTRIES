@@ -7,7 +7,7 @@ export default function Home({donnee}) {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedRegion, setSelectedRegion] = useState("Filter by Region");
 
-    const regions = ["Africa", "America", "Asia", "Europe", "Oceania"];
+    const regions = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
 
     const handleSelect = (region) => {
         setSelectedRegion(region);
