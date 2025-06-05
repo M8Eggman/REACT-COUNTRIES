@@ -12,7 +12,7 @@ export default function Nav() {
         </div>
         <div className="navOptions">
           <span className="navChangeMode">
-            <FontAwesomeIcon icon={faMoonRegular} style={{position:"relative", top:"3px"}}/> Dark Mode
+            <FontAwesomeIcon icon={faMoonRegular} style={{ position: "relative", top: "3px" }} /> Dark Mode
           </span>
         </div>
       </nav>
