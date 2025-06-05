@@ -8,7 +8,6 @@ import axios from 'axios';
 export default function App() {
   const [donnee, setDonnee] = useState(null)
   useEffect(() => {
-
     axios.get('https://restcountries.com/v3.1/all')
       .then((response) => setDonnee(response.data))
       .catch((error) => console.log(error)

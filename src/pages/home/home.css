@@ -17,7 +17,7 @@
     height: 50px;
     border: none;
     border-radius: 5px;   
-    box-shadow: 2px 5px 5px black;;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);;
     padding: 10px 60px;
 }
 
@@ -26,6 +26,7 @@
     border : none;
     align-items: center;
     width: 100%;
+    outline: none;
 }
 
 .searchContainer span{
@@ -54,7 +55,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 5px 5px black;;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);;
   height: 70px;
   
 }
@@ -84,6 +85,7 @@
 
 .dropdown-item:hover {
   background-color: #f8f7f7;
+  
 }
 
 

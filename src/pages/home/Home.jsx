@@ -12,8 +12,13 @@ export default function Home({donnee}) {
     const handleSelect = (region) => {
         setSelectedRegion(region);
         setIsOpen(false);
-        
     };
+    const [recherche, setRecherche] = useState("")
+
+
+    const filteredCountries = donnee && selectedRegion !== "Filter by Region"
+        ? donnee.filter(country => country.region === selectedRegion)
+        : donnee;
 
     return (
         <>
@@ -21,7 +26,7 @@ export default function Home({donnee}) {
                 <div className='searchAndFilter'>
                     <div className='searchContainer'>
                         <span>&#128269;</span>
-                        <input type="search" placeholder='Search for a country...' />
+                        <input type="search" placeholder='Search for a country...' onChange={(e)=>{setRecherche(e.target.value)}} />
                     </div>
 
                     <div className='filterContainer'>
@@ -48,19 +53,16 @@ export default function Home({donnee}) {
                 </div>
 
                 <div className='cardsContainer'>
-                    {!donnee? 
+                    {!donnee ? (
                         <div className='loadingContainer'>
                             <p className='loadingText'>Loading...</p>
-                            <img src={globe} alt="" style={{width:200}}/>  
+                            <img src={globe} alt="" style={{ width: 200 }} />
                         </div>
-                        : <Cards donnee={donnee}/>  
-                          
-                }
-                                         
+                    ) : (
+                        <Cards donnee={filteredCountries} recherche={recherche} />
+                    )}
                 </div>
-
-                
             </section>
         </>
-    )
+    );
 }
