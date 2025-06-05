@@ -7,9 +7,22 @@ export default function Home(){
 
 
         <>
-        <div className='searchContainer'>
-            <input type="search" />
-        </div>
+        <section className='homeContainer'>
+
+            <div className='searchAndFilter'>
+                <div className='searchContainer'>
+                    <span>&#128269;</span>
+                    <input type="search" placeholder='Search for a country...' />
+                </div>
+                <div className='filterContainer'>
+                
+                </div>
+            </div>
+
+            
+
+        </section>
+        
         
         </>
     )
