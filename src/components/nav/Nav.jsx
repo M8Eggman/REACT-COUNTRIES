@@ -11,8 +11,8 @@ export default function Nav() {
           <span>Where in the world?</span>
         </div>
         <div className="navOptions">
-          <span>
-            <FontAwesomeIcon icon={faMoonSolid} /> Dark Mode
+          <span className="navChangeMode">
+            <FontAwesomeIcon icon={faMoonRegular} style={{position:"relative", top:"3px"}}/> Dark Mode
           </span>
         </div>
       </nav>
