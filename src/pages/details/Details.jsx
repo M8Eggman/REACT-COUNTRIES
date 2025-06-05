@@ -6,7 +6,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 export default function Details({ allCountries }) {
   const navigate = useNavigate();
   const { countryCode } = useParams();
-  
+
   const dataCountry = allCountries ? allCountries.find((c) => c.cca3 === countryCode) : null;
 
   return (
@@ -65,21 +65,7 @@ export default function Details({ allCountries }) {
               </div>
               <div className="detailsBorderCountries">
                 <p>Border Countries: </p>
-                {dataCountry.borders
-                  ? dataCountry.borders.map((border, i) => {
-                      const country = allCountries.find((c) => c.cca3 === border);
-                      let nativeName = border;
-                      if (country && country.name && country.name.nativeName) {
-                        const nativeKeys = Object.keys(country.name.nativeName);
-                        if (nativeKeys.length > 0) {
-                          nativeName = country.name.nativeName[nativeKeys[0]].common;
-                        } else if (country.name.common) {
-                          nativeName = country.name.common;
-                        }
-                      }
-                      return <Link key={i}>{nativeName}</Link>;
-                    })
-                  : "No borders"}
+                {dataCountry.borders ? dataCountry.borders.map((border, i) => <Link key={i}>{country.name.common}</Link>) : "No borders"}
               </div>
             </div>
           </div>
