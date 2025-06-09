@@ -7,7 +7,7 @@ export default function Home({donnee}) {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedRegion, setSelectedRegion] = useState("Filter by Region");
 
-    const regions = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
+    const regions = ["Africa", "Americas", "Asia", "Europe", "Oceania", "All"];
 
     const handleSelect = (region) => {
         setSelectedRegion(region);
@@ -16,7 +16,7 @@ export default function Home({donnee}) {
     const [recherche, setRecherche] = useState("")
 
 
-    const filteredCountries = donnee && selectedRegion !== "Filter by Region"
+    const filteredCountries = donnee && selectedRegion !== "Filter by Region" && selectedRegion !== "All"
         ? donnee.filter(country => country.region === selectedRegion)
         : donnee;
 

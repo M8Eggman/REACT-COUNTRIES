@@ -10,8 +10,8 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-
+  transition: transform 0.3s, background-color 0.3s ease;
+  color: #111517;
 }
 
 .card:hover {
@@ -26,11 +26,17 @@
 }
 
 .card-body {
-  
   padding: 2rem 1.5rem;
 }
 
 .card-title {
   font-size: 18px;
   margin-bottom: 0.5rem;
+}
+
+
+.dark .card {
+  background-color: #2b3945;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
 }
