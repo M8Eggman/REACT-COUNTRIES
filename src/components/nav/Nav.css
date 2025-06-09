@@ -8,6 +8,7 @@ nav {
   background-color: #ffffff;
   transition: background-color 0.3s ease;
   gap: 20px;
+  box-sizing: border-box;
 }
 .dark nav {
   background-color: #2b3945;
@@ -39,7 +40,7 @@ nav {
 /* Responsive 768px */
 @media (max-width: 768px) {
   nav {
-    padding-inline: 65px;
+    padding-inline: 35px;
   }
 }
 /* Responsive 576px */

@@ -4,7 +4,7 @@ import { useState } from "react";
 import globe from "../../assets/img/globe.gif";
 
 export default function Home({ donnee }) {
-  const regions = ["Africa", "Americas", "Asia", "Europe", "Oceania", "All"];
+  const regions = ["All", "Africa", "Americas", "Asia", "Europe", "Oceania"];
 
   const [isOpen, setIsOpen] = useState(false);
   const [region, setRegion] = useState("Filter by Region");
