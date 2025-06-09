@@ -18,6 +18,11 @@ nav {
   cursor: pointer;
 }
 
+.navTitle a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navTitle span {
   font-size: 1.8rem;
   font-weight: 800;

@@ -10,7 +10,7 @@ import Details from './pages/details/Details.jsx';
 export default function App() {
   const [donnee, setDonnee] = useState(null)
   useEffect(() => {
-    axios.get('https://restcountries.com/v3.1/all?fields=name,capital,region,population,flags,cca3,borders')
+    axios.get('https://restcountries.com/v3.1/all?fields=name,cca3,flags,population,region,subregion,capital,currencies,languages,borders')
       .then((response) => setDonnee(response.data))
       .catch((error) => console.log(error)
       )
