@@ -1,11 +1,10 @@
 .sectionDetails {
   width: 100%;
-  min-height: calc(100dvh - 160px); 
+  min-height: calc(100dvh - 160px);
   padding-block: 95px;
   padding-inline: 95px;
   box-sizing: border-box;
 }
-
 .detailsBackBtn {
   background: white;
   border: none;
@@ -18,54 +17,45 @@
   transition: background-color 0.3s ease;
   color: inherit;
 }
-
 .detailsBackBtn:hover {
   opacity: 0.8;
 }
-
 .details {
   width: 100%;
   margin-top: 95px;
   display: flex;
-  gap: 7vw;
+  gap: 5vw;
 }
-
 .detailsImg {
   min-width: 40vw;
   height: 30vw;
   overflow: hidden;
 }
-
 .detailsImg img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-
 .detailsText {
   min-width: 40vw;
 }
-
 .detailsTitle h2 {
   font-size: 2.4rem;
   font-weight: 800;
 }
-
 .detailsDescription {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
 }
-
 .detailsDescription p {
   font-size: 20px;
   width: 20vw;
   margin: 5px 0;
 }
-
 .detailsDescription p span {
   font-weight: 800;
 }
-
 .detailsBorderCountries {
   display: flex;
   flex-wrap: wrap;
@@ -73,13 +63,11 @@
   gap: 20px;
   margin-top: 50px;
 }
-
 .detailsBorderCountries p {
   font-size: 20px;
   font-weight: 600;
   margin: 0;
 }
-
 .detailsBorderCountries a {
   text-decoration: none;
   color: inherit;
@@ -91,20 +79,41 @@
   background-color: white;
   transition: background-color 0.3s ease;
 }
-
 .detailsBorderCountries a:hover {
   opacity: 0.8;
 }
-
-
-.dark .detailsBackBtn {
-  background-color: #2b3945;
-  color: #ffffff;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+/* Responsive 992px */
+@media (max-width: 992px) {
+  .detailsDescription {
+    grid-template-columns: 1fr;
+  }
 }
-
-.dark .detailsBorderCountries a {
-  background-color: #2b3945;
-  color: #ffffff;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+/* Responsive 768px */
+@media (max-width: 768px) {
+  .sectionDetails {
+    padding-inline: 35px;
+  }
+  .detailsDescription p {
+    width: auto;
+  }
+}
+/* Responsive 576px */
+@media (max-width: 576px) {
+  .sectionDetails {
+    padding-inline: 25px;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .detailsImg {
+    height: 60vw;
+  }
+}
+/* Responsive 375px */
+@media (max-width: 375px) {
+  .sectionDetails {
+    padding-inline: 10px;
+  }
 }

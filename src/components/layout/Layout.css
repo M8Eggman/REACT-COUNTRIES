@@ -3,71 +3,65 @@
   color: #111517;
   min-height: 100vh;
 }
-
 .app.dark {
   background-color: #202c37;
   color: #ffffff;
 }
-
-
 .app.dark nav {
   background-color: #2b3945;
   color: #ffffff;
 }
-
-
 .app.dark .card {
   background-color: #2b3945;
   color: #ffffff;
 }
-
 .app.dark .searchContainer {
   background-color: #2b3945;
   color: #ffffff;
 }
-
 .app.dark .searchContainer input {
   background-color: #2b3945;
   color: #ffffff;
 }
-
 .app.dark .searchContainer input::placeholder {
   color: #cccccc;
 }
-
 .app.dark .dropdown-button {
   background-color: #2b3945;
   color: #ffffff;
   border: none;
 }
-
 .app.dark .dropdown-menu {
   background-color: #2b3945;
   color: #ffffff;
   border: none;
 }
-
 .app.dark .dropdown-item:hover {
   background-color: #374151;
 }
-
-
 .app.dark .detailsBackBtn {
   background-color: #2b3945;
   color: #ffffff;
   border: none;
 }
-
 .app.dark .detailsBackBtn:hover {
   background-color: #374151;
 }
-
 .app.dark .detailsBorderCountries a {
   background-color: #2b3945;
   color: #ffffff;
   border: none;
 }
-
 .app.dark .detailsBorderCountries a:hover {
   background-color: #374151;
+}
+.dark .detailsBackBtn {
+  background-color: #2b3945;
+  color: #ffffff;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.dark .detailsBorderCountries a {
+  background-color: #2b3945;
+  color: #ffffff;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
