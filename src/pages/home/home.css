@@ -97,6 +97,20 @@
     margin-inline: -35px;
 }
 
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.loadingText {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
 
 .dark .searchContainer {
     background-color: #2b3945;
