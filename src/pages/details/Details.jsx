@@ -68,7 +68,11 @@ export default function Details({ allCountries }) {
                 {dataCountry.borders
                   ? dataCountry.borders.map((border, i) => {
                       const country = allCountries.find((item) => item.cca3 === border);
-                      return <Link key={i} to={`/${country.cca3}`}>{country.name.common}</Link>;
+                      return (
+                        <Link key={i} to={`/${country.cca3}`}>
+                          {country.name.common}
+                        </Link>
+                      );
                     })
                   : "No borders"}
               </div>

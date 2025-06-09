@@ -8,3 +8,24 @@ body {
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
 }
+
+/* Responsive 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Responsive 576px */
+@media (max-width: 576px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* Responsive 375px */
+@media (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+}

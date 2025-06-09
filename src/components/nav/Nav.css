@@ -7,27 +7,23 @@ nav {
   padding-inline: 95px;
   background-color: #ffffff;
   transition: background-color 0.3s ease;
+  gap: 20px;
 }
-
 .dark nav {
   background-color: #2b3945;
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
 .navTitle {
   cursor: pointer;
 }
-
 .navTitle a {
   text-decoration: none;
   color: inherit;
 }
-
 .navTitle span {
   font-size: 1.8rem;
   font-weight: 800;
 }
-
 .navChangeMode {
   display: flex;
   gap: 20px;
@@ -36,7 +32,29 @@ nav {
   align-items: center;
   transition: color 0.3s ease;
 }
-
 .navChangeMode:hover {
   opacity: 0.8;
+}
+
+/* Responsive 768px */
+@media (max-width: 768px) {
+  nav {
+    padding-inline: 65px;
+  }
+}
+/* Responsive 576px */
+@media (max-width: 576px) {
+  nav {
+    padding-inline: 25px;
+  }
+}
+/* Responsive 375px */
+@media (max-width: 375px) {
+  nav {
+    padding-inline: 10px;
+    gap: 10px;
+  }
+  .navChangeMode {
+    gap: 10px;
+  }
 }
