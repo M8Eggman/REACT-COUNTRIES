@@ -65,7 +65,7 @@ export default function Details({ allCountries }) {
               </div>
               <div className="detailsBorderCountries">
                 <p>Border Countries: </p>
-                {dataCountry.borders
+                {dataCountry.borders.length > 0
                   ? dataCountry.borders.map((border, i) => {
                       const country = allCountries.find((item) => item.cca3 === border);
                       return (
@@ -74,7 +74,7 @@ export default function Details({ allCountries }) {
                         </Link>
                       );
                     })
-                  : "No borders"}
+                  : <p>No borders</p>}
               </div>
             </div>
           </div>

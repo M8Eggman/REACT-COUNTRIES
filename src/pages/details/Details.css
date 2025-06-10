@@ -68,6 +68,9 @@
   font-weight: 600;
   margin: 0;
 }
+.detailsBorderCountries p:first-of-type {
+  font-weight: 800;
+}
 .detailsBorderCountries a {
   text-decoration: none;
   color: inherit;
