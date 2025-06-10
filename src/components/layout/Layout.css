@@ -11,6 +11,10 @@
   background-color: #2b3945;
   color: #ffffff;
 }
+.app.dark footer {
+  background-color: #2b3945;
+  color: #ffffff;
+}
 .app.dark .card {
   background-color: #2b3945;
   color: #ffffff;
